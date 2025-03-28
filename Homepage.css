@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&family=Fira+Code&family=M+PLUS+Code+Latin:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+body{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-color: antiquewhite;
+  
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+    position:fixed;
+    text-align: center;
+    z-index: 1000;
+    width: 100%; /*ensures navbar stays on top */
+    transition: top 0.3s;
+    height: 70px;
+    transition: 0.3s;
+    
+    
+}
+.nav-left{
+    height: 50px;
+    padding: 20px;
+}
+
+.nav-right{
+  
+    padding: 18px;
+    display: flex;
+    gap: 10px;
+    
+  
+    
+}
+
+
+.a-element{
+   
+    margin: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+   
+}
+
+.icons{
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.home{
+    background: url(./images/bg-frame.jpg);
+   
+    justify-content: center;
+    text-align: center;
+ 
+    flex-direction: row;
+    
+    height: 130vh;
+    background-color:antiquewhite;
+    width: 100%;
+   
+   
+}
+
+.home-left{
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+
+    padding-top: 300px;
+    padding-left: 100px;
+    
+   
+
+}
+.left1{
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+.left2{
+    font-size: 85px;
+    font-weight: 600px;
+}
+.left3{
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(255, 166, 0);
+    margin-bottom: 15px;
+}
+.left4{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 30px;
+   
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgb(153,255,0);
+    border:2px solid rgb(153, 255, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 20px;
+    font-size: 16px;
+    font-weight: 800px;
+    font-size: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: rgb(0, 236, 236);
+    box-shadow: none;
+}
+
+.home-right{
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    
+    height: 50vh;
+    padding-top: 100px;
+   
+ 
+
+}
+.right-img{
+
+    padding-right: 30px;
+  
+}
+
+.h-right-img{
+     
+        width: 800px; /* Adjust size as needed */
+        height: 600px;
+        border-radius: 20%;
+        object-fit: cover; 
+        opacity: .2;
+      
+        padding-right:80px;
+        
+      
+}
+
+.categories{
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(9, 224, 9);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+   
+    font-size: 20px;
+    
+}
+
+.categories-p{
+    letter-spacing: 5px;
+    line-height: 2px;
+    color: rgb(12, 101, 54);
+}
+.catgories-h1{
+
+    font-style: italic;
+
+}
+
+
+.catg-h1{
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 30px;
+ 
+}
+
+.catg-content{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+.categories-service{
+    margin: 20px;
+    border: 2px solid red;
+
+
+   
+}
+.categ-img {
+    width: 200px; /* Adjust this size as needed */
+    height: 200px; /* Matches the width for a perfect circle */
+    border-radius: 0%;
+   /* object-fit: cover; /* Ensures inside the circle */
+
+    justify-content: center;
+    margin: 10px;
+    border: 2px solid rgb(235, 235, 235);
+    
+    justify-content: center;
+    
+
+}
+.catg-h1{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.scrolling-text {
+  display: flex;
+  flex-direction: row;
+  gap: 50px; 
+  background-color: rgb(178, 181, 181);
+  height: 50px;
+  font-weight:50px;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+ 
+}
+
+.scrolling-text span {
+  display: inline-block;
+}
+
+.marq-h1{
+    text-align: center;
+}
+.sp-1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact{
+    text-align: center;
+}
+.aboutstore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.store-img{
+    width:600px ;
+    height: 500px;
+    align-items: left;
+    padding: 20px;
+    padding-left: 30px;
+}
+.store-location{
+    padding: 50px;
+    justify-content: center;
+}
+
+.location a{
+    text-decoration: none;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: indianred;
+}
+.location
+ a:hover{
+    border: 1px solid rgb(4, 4, 4);
+    background: transparent;
+    transition: .5s;
+}
+
+.sote-features{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.features{
+    border: 2px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gmail-logo{
+    height: 50px;
+    
+
+}
+
+.fea-p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fea-h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    font-size: 30px;
+}
+
+.fea-btn{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.cont-h1{
+    color: rgb(9, 224, 9);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-size: 40px;
+    font-size: bold;
+}
+
+
+.cont-info{
+    font-family: "Encode Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-size: 20;
+    gap: 20px;
+
+}
+
+.social-icon-img{
+    height: 30px;
+ 
+}
+
+.navbar.hidden{
+    top: -60px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: ROW;
+        text-align: center;
+        width: 100%;
+    }
+
+    .home {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .scrolling-text{
+        width: 100%;
+    }
+    .aboutstore{
+        width: 100%;
+        flex-direction: column;
+     
+    }
+    .sote-features{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .catg-content{
+        width: 100%;
+        flex-direction: column;
+      
+    }
+    .categories{
+        width: 100%;
+       
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
