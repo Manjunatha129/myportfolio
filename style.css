@@ -75,4 +75,9 @@ form input.operator{
 .btn:hover{
     background: transparent;
     color: rgb(0, 236, 236);
+<<<<<<< HEAD
 }
+=======
+    box-shadow: none;
+}
+>>>>>>> 841fb86a482d994e8de7a7def7dc9b548acc5eb4
